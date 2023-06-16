@@ -1,0 +1,7 @@
+.sidebar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.side-menu{
+    border: 1px solid black;
+}
