@@ -5,3 +5,22 @@
 .side-menu{
     border: 1px solid black;
 }
+
+.logo{
+    border: 1px solid black;
+}
+
+.side-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.topbar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+    align-items: center;
+}
