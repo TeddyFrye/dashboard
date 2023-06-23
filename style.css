@@ -52,24 +52,27 @@ body{
 }
 
 .topbar {
-    grid-column: 2 / 4;
+    display: grid;
+    grid-column: 2/4;
     grid-row: 1 / 2;
-    background-color: white;
+    align-items: center;
+    justify-items: center;
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-}
-  
-.tophalf {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
+    z-index: 2;
+  }
 
 .search-icon {
     width: 20px;
     height: 20px;
 }
-  
+.searchbar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+  }
+
 .searchbar input[type="text"] {
     width: 200px;
     height: 20px;
@@ -83,26 +86,46 @@ body{
     outline: none;
     background-color: #ccc;
 }
-  
-.bottomhalf {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
 .username {
-    padding-right: 10px;
+    grid-column: 1 /1;
+    grid-row: 2 / 2;
+    justify-self: flex-end;
+    margin-top: 5px;
+    margin-right: 50%;
     font-weight: bold;
-    margin-top:
+    font-size: larger;
 }
 
 .user-info {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 10px;
+}
+
+.button {
+    display: inline-flex;
+    margin-right: 5px;
+    padding: 10px;
+    grid-row: 2;
+    background-color:#0284c7;
+    color: white;
+    border-radius: 20px; 
+    width: 75px;
+    align-items: center;
+    justify-content: center;
 }
   
+.button:first-child {
+    margin-left: 0;
+}  
+
+.button-container {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-self: flex-end;
+}
 
 .projects-header {
     font-weight: bold;
