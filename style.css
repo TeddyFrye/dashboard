@@ -44,8 +44,12 @@ body{
     align-items: center;
     justify-content: left;
     padding: 5px;
-  }
+    transition: background-color 0.3s; /* Add a transition effect for smooth color change */
+}
 
+.menu-option:hover {
+  background-color: #0369a1; /* Apply the darker background color on hover */
+}
 .topbar {
     background-color: white;
     padding: 10px;
@@ -61,7 +65,6 @@ body{
 .search-icon {
     width: 20px;
     height: 20px;
-    padding-top: 15px;
 }
 
 .searchbar input[type="text"] {
@@ -91,7 +94,7 @@ body{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-rows: auto 1fr; /* 1fr will occupy the remaining space */
+  grid-template-rows: auto 1fr; 
   gap: 10px;
   padding: 10px;
   background-color: #e6e6e6;
@@ -99,10 +102,11 @@ body{
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 column grid */
-  grid-template-rows: repeat(3, 1fr); /* 3 row grid */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
   gap: 10px;
 }
+
 .project {
     border: 1px solid #e6e6e6;
     margin-bottom: 10px;
@@ -111,8 +115,12 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     border-left: 5px solid #f59e0b;
     border-radius: 5px;
-  }
-  
+    transition: background-color 0.3s; /* Add a transition effect for smooth color change */
+}
+
+.project:hover {
+  background-color: #ccc; /* Apply the darker background color on hover */
+}
 .my-announcements {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
