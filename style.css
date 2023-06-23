@@ -108,7 +108,6 @@ body{
     background-color: #e6e6e6;
 }
 
-
 .user-info {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -209,15 +208,24 @@ body{
     padding-right: 10px;
 }
 
-.my-announcements {
+.right-side {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: #e2e8f0;
-  }
-  
+}
+
+.my-announcements{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #e2e8f0;
+}
+
 .Trending {
     grid-column: 3 / 4;
     grid-row: 3 / 4; 
@@ -227,8 +235,8 @@ body{
   }
   
 .announcement, .trend {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 10px;
+    background-color: #f8fafc;
     padding: 10px;
+    border-bottom:1px, solid, #4b5563;
   }
   
